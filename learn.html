@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="changeBG()" id="color" name="color">Submit</button>
+
+    <script> 
+        //var add =newfunction("num1","num","returnnum1+num2");
+        //document.writeln(add(2,5));
+        //create function with arguments(emp,id ,name ,salary)**@@@
+        function emp(id,name,salary){
+            this.id =id;
+          this.name = name;
+            this.salary = salary;
+          }
+          e =new emp(102,"abcd", 70000);
+          document.write(e.id+" "+ e.name + " "+e.salary);
+       //call function by passing arguments***
+       //function getcube(number){
+        //alert(number*number*number*);
+    </script>
+    <script>
+        function changeBG(){
+           let doc = document.getElementById("color");
+           doc.style.backgroundColor = "pink";
+        }
+    </script>
+</body>
+</html>
